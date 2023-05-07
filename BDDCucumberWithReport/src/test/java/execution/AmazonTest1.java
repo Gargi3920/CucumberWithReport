@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 		features = {"src/test/resources/Features/Login.feature"},
 		glue = {"execution"},
 	
-			
+			publish = true,
 		plugin = {"pretty", "html:target/htmlReport/HTMLREPORT.html",  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)
 public class AmazonTest1 extends AbstractTestNGCucumberTests {
